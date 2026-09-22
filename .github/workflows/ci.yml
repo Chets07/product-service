@@ -24,6 +24,5 @@ jobs:
           cache: maven
 
       - name: Build with Maven
-        working-directory: product-service
         run: ./mvnw package -DskipTests
 
