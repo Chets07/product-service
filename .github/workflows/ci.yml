@@ -26,3 +26,5 @@ jobs:
       - name: Build with Maven
         run: ./mvnw package -DskipTests
 
+      - name: Build Docker image
+        run: docker build -f DockerFile -t product-service .
